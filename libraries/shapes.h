@@ -44,7 +44,7 @@ public:
 class J: public Shape {
 public:
 	J(): Shape(2,3,0,1) {
-		texture.loadFromFile("graphics.png", sf::IntRect(0,0,18,18));
+		texture.loadFromFile("sprites/graphics.png", sf::IntRect(0,0,18,18));
 		mass[0][1] = 0;
 		mass[0][2] = 0;
 	}
@@ -54,7 +54,7 @@ public:
 class Piedestal: public Shape {
 public:
 	Piedestal(): Shape( 2, 3, 1, 1 ) {
-		texture.loadFromFile("graphics.png", sf::IntRect(18,0,18,18));
+		texture.loadFromFile("sprites/graphics.png", sf::IntRect(18,0,18,18));
 		mass[0][0] = 0;
 		mass[0][2] = 0;
 	}
@@ -64,7 +64,7 @@ public:
 class Snake: public Shape {
 public:
 	Snake(): Shape(2,3,2,1) {
-		texture.loadFromFile("graphics.png", sf::IntRect(36,0,18,18));
+		texture.loadFromFile("sprites/graphics.png", sf::IntRect(36,0,18,18));
 		mass[0][2] = 0;
 		mass[1][0] = 0;
 	}
@@ -74,7 +74,7 @@ public:
 class AntiSnake : public Shape {
 public:
 	AntiSnake(): Shape(2,3,3,1) {
-		texture.loadFromFile("graphics.png", sf::IntRect(54,0,18,18));	
+		texture.loadFromFile("sprites/graphics.png", sf::IntRect(54,0,18,18));	
 		mass[0][0] = 0;
 		mass[1][2] = 0;
 	}
@@ -84,14 +84,14 @@ public:
 class Square: public Shape {
 public:
 	Square(): Shape(2,2,4,1) {
-		texture.loadFromFile("graphics.png", sf::IntRect(72,0,18,18));		
+		texture.loadFromFile("sprites/graphics.png", sf::IntRect(72,0,18,18));		
 	}
 };
 //****
 class Rectangle: public Shape {
 public:
 	Rectangle(): Shape(1, 4, 5, 1) {
-		texture.loadFromFile("graphics.png", sf::IntRect(90,0,18,18));
+		texture.loadFromFile("sprites/graphics.png", sf::IntRect(90,0,18,18));
 	}
 };
 //*
@@ -100,7 +100,7 @@ public:
 class L: public Shape {
 public:
 	L(): Shape(2,3,6,1) {
-		texture.loadFromFile("graphics.png", sf::IntRect(108,0,18,18));
+		texture.loadFromFile("sprites/graphics.png", sf::IntRect(108,0,18,18));
 		mass[0][0] = 0;
 		mass[0][1] = 0;
 	}
