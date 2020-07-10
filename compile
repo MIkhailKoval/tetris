@@ -1,0 +1,5 @@
+#!/bin/bash
+clear
+g++ -c tetris.cpp 
+g++ tetris.o -o a -lsfml-graphics -lsfml-window -lsfml-system
+./a
