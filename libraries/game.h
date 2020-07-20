@@ -36,6 +36,7 @@ private:
 	int score = 0;
 	int rows = 0;
 	bool isOver = 0;
+	int bestScore = 0;
 };
 
 void Game::drawContur() {
@@ -223,6 +224,10 @@ void Game::drawStatistic() {
 	text1.setPosition(305, 45);
 	window.draw(text1);	
 
+	sf::Text text2("BestScore:" + std::to_string(bestScore), font, 20);
+	text2.setFillColor(sf::Color::Black);
+	text2.setPosition(305, 72);
+	window.draw(text2);	
 }
 void Game::pauseButtons(const sf::Event& event, Shape* shape, int& x, int& y) {
 	if( event.type == sf::Event::KeyPressed ) {
@@ -258,6 +263,7 @@ void Game::playButtons(const sf::Event& event, Shape* shape, int& x, int& y) {
 	}
 } 
 void Game::newGame() {
+	bestScore = std::max(score, bestScore);
 	score = 0;
 	stop = 0;
 	rows = 0;
