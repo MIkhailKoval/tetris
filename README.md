@@ -1,10 +1,10 @@
 #tetris
-
-Запуск:
+Установка(linux):
 ------------
-	g++ -c tetris.cpp 
-	g++ tetris.o -o a -lsfml-graphics -lsfml-window -lsfml-system
-	./a	
+	mkdir build && cd build && cmake .. && make
+Запуск(linux):
+------------
+./game
 
 Управление:
 ------------
