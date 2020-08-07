@@ -1,17 +1,21 @@
 <h1 align="center">
 Tetris
 </h1>
+<p align="center">
+  <img src="image/example.jpg" align="center"></img>
+</p>
 
-*Установка*(linux):
-----------
+*Установка:*
+------------
 mkdir build && cd build && cmake .. && make
-*Запуск*(linux):
--------
+
+*Запуск:*
+---------
 cd bin
 ./game
 
-*Управление*:
-------------
+*Управление:*
+-------------
 + Up - поворот.
 + Down - опустить вниз.
 + Left - сдвиг влево.
