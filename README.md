@@ -1,16 +1,20 @@
-							# Tetris
+<h1 align="center">
+Tetris
+</h1>
+
 *Установка*(linux):
 ----------
-	mkdir build && cd build && cmake .. && make
+mkdir build && cd build && cmake .. && make
 *Запуск*(linux):
 -------
+cd bin
 ./game
 
 *Управление*:
 ------------
-	Up - поворот.
-	Down - опустить вниз.
-	Left - сдвиг влево.
-	Right - сдвиг вправо.
-	Enter - фигура падает до упора.
-	Space - пауза.
++ Up - поворот.
++ Down - опустить вниз.
++ Left - сдвиг влево.
++ Right - сдвиг вправо.
++ Enter - фигура падает до упора.
++ Space - пауза.
