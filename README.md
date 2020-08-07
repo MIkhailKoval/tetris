@@ -12,6 +12,7 @@ mkdir build && cd build && cmake .. && make
 *Запуск:*
 ---------
 cd bin
+
 ./game
 
 *Управление:*
