@@ -1,4 +1,5 @@
-#tetris
+							#tetris
+------------
 Установка(linux):
 ------------
 	mkdir build && cd build && cmake .. && make
